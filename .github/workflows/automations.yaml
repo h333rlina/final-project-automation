@@ -1,12 +1,15 @@
-name: Automation Test - Final Project
+name: Automation Test - Web & API Integrated
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  cucumber-tests:
+  automation-suite:
+    name: Run All Tests (Web & API)
     runs-on: ubuntu-latest
 
     steps:
@@ -23,20 +26,23 @@ jobs:
       - name: Grant Execute Permission for Gradlew
         run: chmod +x gradlew
 
+      - name: Set up Chrome Browser
+        uses: browser-actions/setup-chrome@latest
+
       - name: Run API Tests
-        run: ./gradlew apiTest
+        run: ./gradlew test -Dcucumber.filter.tags="@api"
         continue-on-error: true
 
       - name: Run Web UI Tests
-        run: ./gradlew webTest
+        run: ./gradlew test -Dcucumber.filter.tags="@web"
         continue-on-error: true
 
-      - name: Upload Cucumber Reports
+      - name: Upload Test Artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cucumber-reports
+          name: full-automation-report
           path: |
-            build/reports/
             target/
+            build/reports/
             build/test-results/

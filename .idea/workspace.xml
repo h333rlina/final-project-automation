@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd1abb9-47f7-4f5f-9f59-dffb3308c485" name="Changes" comment="feat: add combined Web UI &amp; API automation framework structure and documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2cd1abb9-47f7-4f5f-9f59-dffb3308c485" name="Changes" comment="feat: fix workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766024564317</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: fix workflow">
+      <option name="closed" value="true" />
+      <created>1766025728829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766025728830</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +265,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add combined Web UI &amp; API automation framework structure and documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add combined Web UI &amp; API automation framework structure and documentation" />
+    <MESSAGE value="feat: fix workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fix workflow" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
