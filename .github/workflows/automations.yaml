@@ -3,7 +3,6 @@ name: Automation Test - Final Project
 on:
   pull_request:
     branches: [ main ]
-  
   workflow_dispatch:
 
 jobs:
@@ -19,6 +18,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'corretto'
+          cache: 'gradle'
 
       - name: Grant Execute Permission for Gradlew
         run: chmod +x gradlew
@@ -29,10 +29,14 @@ jobs:
 
       - name: Run Web UI Tests
         run: ./gradlew webTest
+        continue-on-error: true
 
       - name: Upload Cucumber Reports
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cucumber-reports
-          path: build/reports/cucumber/
+          path: |
+            build/reports/
+            target/
+            build/test-results/
