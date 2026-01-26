@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/automation-final-project.iml" filepath="$PROJECT_DIR$/.idea/modules/automation-final-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/automation-final-project.main.iml" filepath="$PROJECT_DIR$/.idea/modules/automation-final-project.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/automation-final-project.test.iml" filepath="$PROJECT_DIR$/.idea/modules/automation-final-project.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.example.automation-final-project.test.iml" filepath="$PROJECT_DIR$/.idea/modules/org.example.automation-final-project.test.iml" />
     </modules>
   </component>
 </project>
